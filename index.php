@@ -19,7 +19,7 @@ if ($fh) {
 	fclose ( $fh );
 }
 
-echo "<html><body><h1>Traffic Statistiken für ";
+echo "<html><body><h1>Traffic Statistiken ";
 echo gethostname ();
 echo "</h1>";
 echo "<table>";
