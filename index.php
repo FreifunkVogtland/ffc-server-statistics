@@ -1,5 +1,8 @@
 <?php
 $fh = fopen ( "stats.conf", "r" );
+if(!$fh){
+	$fh = fopen ( "vnstat/stats.conf", "r" );
+}
 
 if ($fh) {
 	while ( ($buffer = fgets ( $fh, 4096 )) !== false ) {
